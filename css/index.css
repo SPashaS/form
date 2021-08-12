@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    background-image: url('../assets/images/background.png');
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    
+}
+.wrapper {
+    height: 100vh;
+    background-color: #00336698;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    width: 920px;
+    height: 820px;
+    border-radius: 30px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.form__top {
+    position: relative;
+}
+.form__btn-close {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border-width: 0;
+    background-color: red;
+    position: absolute;
+    top:-18px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.form__btn-close::after {
+    content: "";
+    display: block;
+    background-image: url('../assets/images/redX.png');
+    background-size: 16px 16px;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.form__nav-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 34px;
+    padding: 0;
+}
+
+.form__nav {
+    position: relative;
+    padding: 56px 0 5px;
+}
+.form__nav-list::before {
+    content: "";
+    display: block;
+    background-image: url('../assets/images/zmeika.png');
+    background-size: 63px 7px;
+    width: 63px;
+    height: 7px;
+    position: absolute;
+    top:33px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.form__content {
+    position: relative;
+}
+.form__content-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 0 44px;
+}
+.input {
+    width: 500px;
+}
+.form__legend {
+    font-size: 38px;
+    text-align: center;
+    font-family: 'Monserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    margin-bottom: 61px;
+}
+
+.form__legend::after {
+    content: "";
+    display: block;
+    background-image: url('../assets/images/zmeika.png');
+    background-size: 63px 7px;
+    width: 63px;
+    height: 7px;
+    position: absolute;
+    top:64px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.form__input {
+    width: 500px;
+    height: 40px;
+    margin-bottom: 21px;
+}
+
+.form__textarea {
+    resize: none;
+    width: 500px;
+    height: 147px;
+}
+
+
+fieldset  {
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-width: 0px;
+    border-style: groove;
+    border-color: threedface;
+    border-image: initial;
+}

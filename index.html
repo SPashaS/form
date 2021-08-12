@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/index.css">
+        <title>Форма</title>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <form class="form" action="">
+                <div class="form__top">
+                        <button class="form__btn-close"></button>
+                        <nav class="form__nav">
+                            <ul class="form__nav-list">
+                                <li class="form__nav-item">
+                                    <a class="form__nav-link" href="">Главная</a>
+                                </li>
+                                <li class="form__nav-item">
+                                    <a class="form__nav-link" href="">Контакты</a>
+                                </li>
+                                <li class="form__nav-item">
+                                    <a class="form__nav-link" href="">Форма обратной связи</a>
+                                </li>
+                            </ul>
+                        </nav>
+                </div>
+
+                <fieldset class="form__content">
+                    <legend class="form__legend">Форма обратной связи</legend>
+                    <div class="form__content-inner">
+                        <input class="form__input" type="text" id="name" placeholder="Введите ФИО">
+                        <input class="form__input" type="email" id="email" placeholder="Введите Ваш Email">
+                        <input class="form__input" type="text" id="phoneNumber" placeholder="Введите Ваш Телефон">
+                        <textarea class="form__textarea" id="textarea" placeholder="Введите текст"></textarea>
+                    </div>
+                </fieldset>
+
+                <div class="form__footer">
+                    <input type="submit" value="Отправить">
+                </div>
+            </form>
+
+        </div>
+    </body>
+</html>
